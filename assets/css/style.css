@@ -626,7 +626,7 @@ ul {
 }
 
 .video-wrapper {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
@@ -635,6 +635,8 @@ ul {
 
 .video-wrapper video {
     width: 100%;
+    max-height: 350px;
+    object-fit: cover;
     display: block;
 }
 
@@ -708,6 +710,35 @@ ul {
 .fl-highlight h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+/* English Education Video */
+.english-video-wrapper {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.english-video-wrapper h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.english-video-wrapper video {
+    max-width: 500px;
+    width: 100%;
+    max-height: 300px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    object-fit: contain;
+    background: #000;
+}
+
+@media (max-width: 768px) {
+    .english-video-wrapper video {
+        max-width: 100%;
+        max-height: 250px;
+    }
 }
 
 /* =============================================
