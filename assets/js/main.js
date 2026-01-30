@@ -412,6 +412,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 console.log('Aydınlık Yarınlar Anaokulu - Website loaded successfully!');
 
+// FAQ Toggle Functionality
+const faqItems = document.querySelectorAll('.faq-item');
+if (faqItems.length > 0) {
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        }
+    });
+}
+
 }); // End of DOMContentLoaded
 
 // Founder message toggle - global function

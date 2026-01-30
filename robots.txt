@@ -1,0 +1,27 @@
+# Aydınlık Yarınlar Anaokulu - robots.txt
+# www.aydinlikyarinlar.com
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow assets that don't need indexing
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Sitemap location
+Sitemap: https://www.aydinlikyarinlar.com/sitemap.xml
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Googlebot Image
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
