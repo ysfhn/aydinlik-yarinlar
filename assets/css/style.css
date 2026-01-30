@@ -239,16 +239,17 @@ ul {
 .nav-list {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .nav-link {
-    padding: 10px 18px;
-    font-size: 0.95rem;
+    padding: 8px 12px;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-dark);
     border-radius: var(--border-radius-xl);
     transition: var(--transition-normal);
+    white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -260,7 +261,7 @@ ul {
 .nav-link.nav-btn {
     background: var(--gradient-primary);
     color: var(--bg-white);
-    padding: 12px 24px;
+    padding: 10px 18px;
 }
 
 .nav-link.nav-btn:hover {
