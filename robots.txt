@@ -10,7 +10,7 @@ Disallow: /assets/js/
 Disallow: /assets/css/
 
 # Sitemap location
-Sitemap: https://www.aydinlikyarinlar.com/sitemap.xml
+Sitemap: https://aydinlikyarinlar.com/sitemap.xml
 
 # Googlebot specific
 User-agent: Googlebot
