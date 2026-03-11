@@ -2527,6 +2527,130 @@ ul {
 }
 
 /* =============================================
+   WORKSHOP SECTION STYLES
+   ============================================= */
+
+.workshop-section {
+    background: linear-gradient(135deg, #fff5f8 0%, #fff9e6 50%, #f0f7ff 100%);
+    padding: 80px 0;
+}
+
+.workshop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.workshop-card {
+    background: var(--bg-white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.workshop-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.workshop-video-wrapper {
+    position: relative;
+    width: 100%;
+    background: #000;
+    border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+    overflow: hidden;
+}
+
+.workshop-video-wrapper video {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.workshop-info {
+    padding: 24px;
+}
+
+.workshop-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(255, 107, 157, 0.1);
+    color: var(--primary-color);
+    border-radius: var(--border-radius-xl);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.workshop-date i {
+    font-size: 0.8rem;
+}
+
+.workshop-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    font-family: var(--font-secondary);
+}
+
+.workshop-desc {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.workshop-empty-note {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.workshop-empty-note p {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 30px;
+    background: var(--bg-white);
+    border-radius: var(--border-radius-xl);
+    color: var(--text-light);
+    font-size: 0.95rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.workshop-empty-note p i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .workshop-section {
+        padding: 60px 0;
+    }
+    
+    .workshop-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .workshop-video-wrapper video {
+        max-height: 300px;
+    }
+    
+    .workshop-info {
+        padding: 18px;
+    }
+    
+    .workshop-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* =============================================
    FAQ SECTION STYLES
    ============================================= */
 
