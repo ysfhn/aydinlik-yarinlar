@@ -41,6 +41,25 @@
     --transition-slow: 0.5s ease;
 }
 
+/* Skip to Content */
+.skip-to-content {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: var(--border-radius-sm);
+    z-index: 100000;
+    font-weight: 600;
+    transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+    top: 10px;
+}
+
 /* Reset & Base */
 *, *::before, *::after {
     margin: 0;
@@ -2749,5 +2768,72 @@ ul {
     
     .faq-item.active .faq-answer {
         padding: 0 20px 20px 20px;
+    }
+}
+
+/* =============================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================= */
+
+/* Focus styles for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.nav-link:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
+    border-radius: var(--border-radius-sm);
+}
+
+.filter-btn:focus-visible,
+.guide-tab:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.faq-question:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: -2px;
+    border-radius: var(--border-radius-md);
+}
+
+.modal-close:focus-visible,
+.modal-prev:focus-visible,
+.modal-next:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+}
+
+/* nav-toggle as button reset */
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* modal-close, modal-prev, modal-next as button */
+.modal-close,
+.modal-prev,
+.modal-next {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }

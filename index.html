@@ -27,6 +27,12 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://aydinlikyarinlar.com/">
+    <link rel="alternate" hreflang="tr" href="https://aydinlikyarinlar.com/">
+    <link rel="alternate" hreflang="x-default" href="https://aydinlikyarinlar.com/">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/images/logo.png" as="image">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -226,9 +232,12 @@
     </script>
 </head>
 <body>
+    <!-- Skip to Content -->
+    <a href="#anasayfa" class="skip-to-content">Ana içeriğe geç</a>
+
     <!-- Header -->
-    <header class="header" id="header">
-        <nav class="nav container">
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" aria-label="Ana menü">
             <a href="#anasayfa" class="nav-logo">
                 <img src="assets/images/logo.png" alt="Aydınlık Yarınlar Logo" class="logo-img">
                 <span class="logo-text">Aydınlık Yarınlar</span>
@@ -248,12 +257,13 @@
                 </ul>
             </div>
             
-            <div class="nav-toggle" id="nav-toggle">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="nav-menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
     </header>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero" id="anasayfa">
         <div class="hero-bg-shapes">
@@ -333,7 +343,7 @@
         <div class="container">
             <div class="about-main">
                 <div class="about-image">
-                    <img src="assets/images/gallery/photo5.jpg" alt="Şanlıurfa Aydınlık Yarınlar Anaokulu İngilizce Eğitimi">
+                    <img src="assets/images/gallery/photo5.jpg" alt="Şanlıurfa Aydınlık Yarınlar Anaokulu İngilizce Eğitimi" loading="lazy" width="600" height="400">
                     <div class="about-image-badge">Yabancı Dil Eğitimi</div>
                 </div>
                 <div class="about-content">
@@ -412,7 +422,7 @@
     <section class="video-section section" id="tanitim">
         <div class="section-header">
             <span class="section-subtitle">SAĞLIK VE GELİŞİM</span>
-            <h2 class="section-title">🎬 Tanıtım Videosu</h2>
+            <h2 class="section-title">Tanıtım Videosu</h2>
             <p class="section-description">Okulumuz, eğitim anlayışımız ve çocuklarımızla geçirdiğimiz mutlu anları videomuzdan izleyebilirsiniz</p>
         </div>
 
@@ -482,8 +492,8 @@
 
                 <!-- English Education Video -->
                 <div class="english-video-wrapper">
-                    <h4>🎬 İngilizce Eğitimimizden Görüntüler</h4>
-                    <video controls playsinline webkit-playsinline preload="auto">
+                    <h4>İngilizce Eğitimimizden Görüntüler</h4>
+                    <video controls playsinline webkit-playsinline preload="metadata">
                         <source src="assets/videos/english-market.mp4" type="video/mp4">
                         Tarayıcınız video oynatmayı desteklemiyor.
                     </video>
@@ -503,7 +513,7 @@
         <div class="container">
             <div class="haloterapi-intro">
                 <div class="halo-image">
-                    <img src="assets/images/gallery/photo1.jpg" alt="Haloterapi">
+                    <img src="assets/images/gallery/photo1.jpg" alt="Aydınlık Yarınlar Anaokulu Haloterapi Tuz Odası" loading="lazy" width="600" height="400">
                     <div class="halo-badge">Doğal Terapi</div>
                 </div>
                 <div class="halo-content">
@@ -788,28 +798,28 @@
         <div class="container">
             <div class="tour-grid">
                 <div class="tour-card">
-                    <img src="assets/images/classroom.jpg" alt="Sınıflar">
+                    <img src="assets/images/classroom.jpg" alt="Aydınlık Yarınlar Anaokulu Sınıfları" loading="lazy" width="600" height="400">
                     <div class="tour-overlay">
                         <h3>Sınıflarımız</h3>
                         <p>Geniş, aydınlık ve renkli sınıflarımız</p>
                     </div>
                 </div>
                 <div class="tour-card">
-                    <img src="assets/images/playground.jpg" alt="Oyun Alanı">
+                    <img src="assets/images/playground.jpg" alt="Aydınlık Yarınlar Anaokulu Oyun Alanı" loading="lazy" width="600" height="400">
                     <div class="tour-overlay">
                         <h3>Oyun Alanı</h3>
                         <p>Güvenli ve eğlenceli oyun parkurumuz</p>
                     </div>
                 </div>
                 <div class="tour-card">
-                    <img src="assets/images/cafeteria.jpg" alt="Yemekhane">
+                    <img src="assets/images/cafeteria.jpg" alt="Aydınlık Yarınlar Anaokulu Yemekhanesi" loading="lazy" width="600" height="400">
                     <div class="tour-overlay">
                         <h3>Yemekhane</h3>
                         <p>Hijyenik ve ferah yemek alanımız</p>
                     </div>
                 </div>
                 <div class="tour-card">
-                    <img src="assets/images/activity.jpg" alt="Aktivite Salonu">
+                    <img src="assets/images/activity.jpg" alt="Aydınlık Yarınlar Anaokulu Aktivite Salonu" loading="lazy" width="600" height="400">
                     <div class="tour-overlay">
                         <h3>Aktivite Salonu</h3>
                         <p>Sanat ve spor etkinlikleri için özel alanımız</p>
@@ -828,36 +838,36 @@
         </div>
 
         <div class="container">
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">Tümü</button>
-                <button class="filter-btn" data-filter="activities">Aktiviteler</button>
-                <button class="filter-btn" data-filter="events">Etkinlikler</button>
-                <button class="filter-btn" data-filter="daily">Günlük Yaşam</button>
+            <div class="gallery-filters" role="group" aria-label="Galeri filtreleri">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">Tümü</button>
+                <button class="filter-btn" data-filter="activities" aria-pressed="false">Aktiviteler</button>
+                <button class="filter-btn" data-filter="events" aria-pressed="false">Etkinlikler</button>
+                <button class="filter-btn" data-filter="daily" aria-pressed="false">Günlük Yaşam</button>
             </div>
 
             <div class="gallery-grid" id="gallery-grid">
                 <div class="gallery-item" data-category="activities">
-                    <img src="assets/images/gallery/photo1.jpg" alt="Aktivite">
+                    <img src="assets/images/gallery/photo1.jpg" alt="Anaokulu aktivite fotoğrafı" loading="lazy">
                     <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                 </div>
                 <div class="gallery-item" data-category="events">
-                    <img src="assets/images/gallery/photo2.jpg" alt="Etkinlik">
+                    <img src="assets/images/gallery/photo2.jpg" alt="Anaokulu etkinlik fotoğrafı" loading="lazy">
                     <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                 </div>
                 <div class="gallery-item" data-category="daily">
-                    <img src="assets/images/gallery/photo3.jpg" alt="Günlük Yaşam">
+                    <img src="assets/images/gallery/photo3.jpg" alt="Anaokulu günlük yaşam fotoğrafı" loading="lazy">
                     <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                 </div>
                 <div class="gallery-item" data-category="activities">
-                    <img src="assets/images/gallery/photo4.jpg" alt="Aktivite">
+                    <img src="assets/images/gallery/photo4.jpg" alt="Anaokulu aktivite fotoğrafı" loading="lazy">
                     <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                 </div>
                 <div class="gallery-item" data-category="events">
-                    <img src="assets/images/gallery/photo5.jpg" alt="Etkinlik">
+                    <img src="assets/images/gallery/photo5.jpg" alt="Anaokulu etkinlik fotoğrafı" loading="lazy">
                     <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                 </div>
                 <div class="gallery-item" data-category="daily">
-                    <img src="assets/images/gallery/photo6.jpg" alt="Günlük Yaşam">
+                    <img src="assets/images/gallery/photo6.jpg" alt="Anaokulu günlük yaşam fotoğrafı" loading="lazy">
                     <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                 </div>
             </div>
@@ -869,11 +879,11 @@
     </section>
 
     <!-- Gallery Modal -->
-    <div class="gallery-modal" id="gallery-modal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modal-img">
-        <a class="modal-prev">&#10094;</a>
-        <a class="modal-next">&#10095;</a>
+    <div class="gallery-modal" id="gallery-modal" role="dialog" aria-label="Galeri görseli" aria-hidden="true">
+        <button class="modal-close" aria-label="Kapat">&times;</button>
+        <img class="modal-content" id="modal-img" alt="Galeri görseli">
+        <button class="modal-prev" aria-label="Önceki görsel">&#10094;</button>
+        <button class="modal-next" aria-label="Sonraki görsel">&#10095;</button>
     </div>
 
     <!-- Workshop Section -->
@@ -1028,7 +1038,7 @@
         </div>
 
         <div class="container">
-            <div class="faq-grid">
+            <div class="faq-grid" role="list" aria-label="Sıkça sorulan sorular">
                 <div class="faq-item">
                     <div class="faq-question">
                         <h3>Şanlıurfa'da nerede bulunuyorsunuz?</h3>
@@ -1127,7 +1137,7 @@
                     <h4>Adres</h4>
                     <p><strong>Aydınlık Yarınlar Kids Education Academy</strong></p>
                     <p>Çamlıyayla mahallesi Buluntu Hoca Bulvarı 605. Cadde 6240 Sk. no:16, Karaköprü, 63200 Şanlıurfa, Türkiye</p>
-                    <a href="https://www.google.com/maps/place/Ayd%C4%B1nl%C4%B1k+Yar%C4%B1nlar+Kids+Education+Academy+Anaokulu/@37.2300618,38.8091484,17z" target="_blank" class="contact-link">Yol Tarifi Al <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://www.google.com/maps/place/Ayd%C4%B1nl%C4%B1k+Yar%C4%B1nlar+Kids+Education+Academy+Anaokulu/@37.2300618,38.8091484,17z" target="_blank" rel="noopener noreferrer" class="contact-link">Yol Tarifi Al <i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
@@ -1144,31 +1154,33 @@
                 <div class="contact-card">
                     <div class="contact-icon"><i class="fas fa-globe"></i></div>
                     <h4>Web & Sosyal Medya</h4>
-                    <p><a href="https://aydinlikyarinlar.com/" target="_blank">www.aydinlikyarinlar.com</a></p>
+                    <p><a href="https://aydinlikyarinlar.com/" target="_blank" rel="noopener noreferrer">www.aydinlikyarinlar.com</a></p>
                     <div class="contact-social">
-                        <a href="https://facebook.com/aydinlikyarinlar" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/aydinlikyarinlaranaokulu/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/905394120239" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com/aydinlikyarinlar" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/aydinlikyarinlaranaokulu" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/905394120239" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Aydınlık Yarınlar Logo" class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Aydınlık Yarınlar Anaokulu Logosu" class="footer-logo" loading="lazy" width="60" height="60">
                     <h3>Aydınlık Yarınlar</h3>
                     <p>Çocuklarınızın geleceği için güvenli ve eğlenceli bir öğrenme ortamı sunuyoruz.</p>
                     <div class="footer-social">
-                        <a href="https://facebook.com/aydinlikyarinlar" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/aydinlikyarinlar" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/aydinlikyarinlar" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://wa.me/905394120239" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.youtube.com/@aydinlikyarinlar" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com/aydinlikyarinlar" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/aydinlikyarinlaranaokulu" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/aydinlikyarinlar" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/905394120239" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@aydinlikyarinlar" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -1184,11 +1196,11 @@
                 <div class="footer-links">
                     <h4>Bilgiler</h4>
                     <ul>
-                        <li><a href="#">Kayıt Koşulları</a></li>
-                        <li><a href="#">Ücret Bilgileri</a></li>
-                        <li><a href="#">KVKK Politikası</a></li>
-                        <li><a href="#">Gizlilik Politikası</a></li>
-                        <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="#randevu">Kayıt Koşulları</a></li>
+                        <li><a href="#iletisim">Ücret Bilgileri</a></li>
+                        <li><a href="#randevu">KVKK Politikası</a></li>
+                        <li><a href="#iletisim">Gizlilik Politikası</a></li>
+                        <li><a href="#sss">Sıkça Sorulan Sorular</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -1199,14 +1211,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Aydınlık Yarınlar Anaokulu. Tüm hakları saklıdır.</p>
+                <p>&copy; 2026 Aydınlık Yarınlar Anaokulu. Tüm hakları saklıdır.</p>
                 <p>Tasarım ve Geliştirme ile ❤️ yapılmıştır.</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/905394120239" class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/905394120239" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geçin">
         <i class="fab fa-whatsapp"></i>
     </a>
 

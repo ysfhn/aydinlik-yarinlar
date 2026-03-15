@@ -44,8 +44,10 @@ window.addEventListener('scroll', () => {
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+        const isExpanded = navMenu.classList.contains('active');
+        navToggle.setAttribute('aria-expanded', isExpanded);
         const icon = navToggle.querySelector('i');
-        if (navMenu.classList.contains('active')) {
+        if (isExpanded) {
             icon.classList.remove('fa-bars');
             icon.classList.add('fa-times');
         } else {
@@ -59,6 +61,7 @@ if (navToggle) {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
         const icon = navToggle.querySelector('i');
         icon.classList.remove('fa-times');
         icon.classList.add('fa-bars');
@@ -88,8 +91,12 @@ window.addEventListener('scroll', () => {
 // Gallery filters
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+        });
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
         
         const filter = btn.dataset.filter;
         
@@ -164,7 +171,7 @@ if (loadMoreBtn) {
             item.className = 'gallery-item';
             item.dataset.category = img.category;
             item.innerHTML = `
-                <img src="${img.src}" alt="${img.alt}">
+                <img src="${img.src}" alt="${img.alt}" loading="lazy">
                 <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
             `;
             item.addEventListener('click', () => openGalleryModal(i));
@@ -203,13 +210,16 @@ function openGalleryModal(index) {
     galleryImages = allGalleryImages.slice(0, currentDisplayedCount);
     currentImageIndex = index;
     modalImg.src = galleryImages[index].src;
+    modalImg.alt = galleryImages[index].alt || 'Galeri görseli';
     galleryModal.classList.add('active');
+    galleryModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 }
 
 // Close gallery modal
 function closeGalleryModal() {
     galleryModal.classList.remove('active');
+    galleryModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
 }
 
@@ -234,6 +244,7 @@ function navigateGallery(direction) {
         currentImageIndex = 0;
     }
     modalImg.src = galleryImages[currentImageIndex].src;
+    modalImg.alt = galleryImages[currentImageIndex].alt || 'Galeri görseli';
 }
 
 if (modalPrev) {
@@ -418,15 +429,29 @@ if (faqItems.length > 0) {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         if (question) {
+            question.setAttribute('role', 'button');
+            question.setAttribute('tabindex', '0');
+            question.setAttribute('aria-expanded', 'false');
             question.addEventListener('click', () => {
                 // Close all other items
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.classList.remove('active');
+                        const otherQ = otherItem.querySelector('.faq-question');
+                        if (otherQ) otherQ.setAttribute('aria-expanded', 'false');
                     }
                 });
                 // Toggle current item
                 item.classList.toggle('active');
+                const isOpen = item.classList.contains('active');
+                question.setAttribute('aria-expanded', isOpen);
+            });
+            // Keyboard support for FAQ
+            question.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    question.click();
+                }
             });
         }
     });
