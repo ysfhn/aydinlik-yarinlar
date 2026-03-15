@@ -1,5 +1,5 @@
 # Aydınlık Yarınlar Anaokulu - robots.txt
-# www.aydinlikyarinlar.com
+# aydinlikyarinlar.com
 
 # Allow all crawlers
 User-agent: *
