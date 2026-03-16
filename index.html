@@ -54,7 +54,7 @@
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
@@ -321,26 +321,8 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Şanlıurfa Anaokulu",
+          "name": "Ana Sayfa",
           "item": "https://aydinlikyarinlar.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Karaköprü Anaokulu",
-          "item": "https://aydinlikyarinlar.com/#hakkimizda"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "İngilizce Eğitim",
-          "item": "https://aydinlikyarinlar.com/#yabanci-dil"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Randevu Al",
-          "item": "https://aydinlikyarinlar.com/#randevu"
         }
       ]
     }
@@ -366,6 +348,7 @@
                     <li class="nav-item"><a href="#tuz-odasi" class="nav-link">Haloterapi</a></li>
                     <li class="nav-item"><a href="#aile-rehberi" class="nav-link">Aile Rehberi</a></li>
                     <li class="nav-item"><a href="#galeri" class="nav-link">Galeri</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="#sss" class="nav-link">S.S.S</a></li>
                     <li class="nav-item"><a href="#iletisim" class="nav-link">İletişim</a></li>
                     <li class="nav-item"><a href="#randevu" class="nav-link nav-btn">Randevu Al</a></li>
@@ -1144,6 +1127,138 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section class="blog-section section" id="blog">
+        <div class="section-header">
+            <span class="section-subtitle">BLOG & REHBER</span>
+            <h2 class="section-title">Eğitim Dünyasından Yazılar</h2>
+            <p class="section-description">Çocuk gelişimi, okul öncesi eğitim ve veli rehberi hakkında faydalı içerikler</p>
+        </div>
+
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/images/gallery/photo10.webp" alt="Şanlıurfa'da anaokulu seçimi rehberi" loading="lazy" width="400" height="250">
+                        <span class="blog-category">Veli Rehberi</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 10 Mart 2026</span>
+                            <span><i class="fas fa-clock"></i> 5 dk okuma</span>
+                        </div>
+                        <h3>Şanlıurfa'da Anaokulu Seçerken Dikkat Edilmesi Gereken 7 Kriter</h3>
+                        <p>Karaköprü, Haliliye ve Seyrantepe'de anaokulu arayan aileler için kapsamlı rehber. Güvenlik, eğitim kadrosu, hijyen standartları ve lokasyon gibi kriterleri değerlendiriyoruz.</p>
+                        <button class="blog-read-more" onclick="this.closest('.blog-card').querySelector('.blog-full-content').classList.toggle('show'); this.textContent = this.textContent === 'Devamını Oku →' ? 'Kapat ↑' : 'Devamını Oku →';">Devamını Oku →</button>
+                        <div class="blog-full-content">
+                            <p><strong>1. Güvenlik ve Hijyen:</strong> Okulun 7/24 kamera sistemi, temizlik rutinleri ve acil durum protokollerini mutlaka sorun. Aydınlık Yarınlar Anaokulu'nda tüm alanlar güvenlik kameraları ile izlenmekte ve günlük dezenfeksiyon yapılmaktadır.</p>
+                            <p><strong>2. Eğitim Kadrosu:</strong> Öğretmenlerin eğitim geçmişi ve deneyimlerini araştırın. Çocuk gelişimi uzmanı ve pedagog desteği olan okulları tercih edin.</p>
+                            <p><strong>3. Eğitim Programı:</strong> Oyun temelli, çocuk merkezli ve gelişim alanlarını destekleyen bir müfredat olmalı. İngilizce eğitimi erken yaşta büyük avantaj sağlar.</p>
+                            <p><strong>4. Fiziksel Ortam:</strong> Sınıfların genişliği, doğal aydınlatma, havalandırma ve oyun alanlarının güvenliğini yerinde görün.</p>
+                            <p><strong>5. Beslenme:</strong> Diyetisyen kontrolünde hazırlanan menüler ve hijyenik mutfak koşulları önemlidir.</p>
+                            <p><strong>6. Ulaşım:</strong> Karaköprü merkezinde, ana yol üzerinde olan okullar hem servis hem bireysel ulaşımda kolaylık sağlar.</p>
+                            <p><strong>7. Veli İletişimi:</strong> Günlük raporlama, düzenli veli toplantıları ve açık iletişim kanalları olmalıdır.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/images/gallery/photo15.webp" alt="Erken yaşta İngilizce eğitiminin faydaları" loading="lazy" width="400" height="250">
+                        <span class="blog-category">İngilizce Eğitim</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 5 Mart 2026</span>
+                            <span><i class="fas fa-clock"></i> 4 dk okuma</span>
+                        </div>
+                        <h3>Erken Yaşta İngilizce Eğitimi: Bilimsel Gerçekler ve Avantajlar</h3>
+                        <p>2-6 yaş arası çocuklarda yabancı dil ediniminin bilişsel gelişime katkıları. Araştırmalar, erken yaşta ikinci dil öğrenmenin beyin gelişimini nasıl desteklediğini ortaya koyuyor.</p>
+                        <button class="blog-read-more" onclick="this.closest('.blog-card').querySelector('.blog-full-content').classList.toggle('show'); this.textContent = this.textContent === 'Devamını Oku →' ? 'Kapat ↑' : 'Devamını Oku →';">Devamını Oku →</button>
+                        <div class="blog-full-content">
+                            <p>Harvard Üniversitesi araştırmalarına göre, 2-7 yaş arası dönem dil edinimi için "kritik dönem" olarak kabul edilmektedir. Bu dönemde ikinci bir dile maruz kalan çocuklar:</p>
+                            <p><strong>Bilişsel Esneklik:</strong> İki dilli çocuklar, tek dilli akranlarına göre problem çözme ve dikkat geçiş becerilerinde daha başarılı performans göstermektedir.</p>
+                            <p><strong>Doğal Telaffuz:</strong> Erken yaşta başlayan çocuklar, ana dili seviyesinde telaffuz geliştirebilir. Bu yetenek 7 yaşından sonra belirgin şekilde azalır.</p>
+                            <p><strong>Kültürel Farkındalık:</strong> Farklı bir dil öğrenmek, çocukların farklı kültürlere karşı açık ve empatik bireyler olmasını destekler.</p>
+                            <p>Aydınlık Yarınlar Anaokulu'nda İngilizce eğitimi, doğal dil edinimi yaklaşımıyla verilmekte; çocuklar dili oyun, şarkı ve günlük iletişim yoluyla öğrenmektedir.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/images/gallery/photo1.webp" alt="Haloterapi tuz odası çocuk sağlığı" loading="lazy" width="400" height="250">
+                        <span class="blog-category">Sağlık</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 28 Şubat 2026</span>
+                            <span><i class="fas fa-clock"></i> 4 dk okuma</span>
+                        </div>
+                        <h3>Haloterapi Nedir? Çocuklarda Tuz Odası Terapisinin 5 Faydası</h3>
+                        <p>Doğal tuz kristalleri ile solunum sağlığını destekleyen haloterapi hakkında bilmeniz gereken her şey. Şanlıurfa'da tuz odası bulunan tek anaokulu olarak deneyimlerimizi paylaşıyoruz.</p>
+                        <button class="blog-read-more" onclick="this.closest('.blog-card').querySelector('.blog-full-content').classList.toggle('show'); this.textContent = this.textContent === 'Devamını Oku →' ? 'Kapat ↑' : 'Devamını Oku →';">Devamını Oku →</button>
+                        <div class="blog-full-content">
+                            <p><strong>1. Solunum Yollarını Temizler:</strong> Tuz kristalleri havadaki bakteri ve alerjenleri azaltarak solunum yollarını rahatlatır. Astım ve bronşit şikayetleri olan çocuklarda belirgin iyileşme gözlemlenir.</p>
+                            <p><strong>2. Bağışıklık Sistemini Güçlendirir:</strong> Doğal antibakteriyel özellikleri sayesinde çocukların bağışıklık sistemi desteklenir, mevsimsel hastalıklara karşı direnç artar.</p>
+                            <p><strong>3. Cilt Sağlığını Destekler:</strong> Egzama, sedef hastalığı gibi cilt problemlerinde tuz terapisi rahatlatıcı etki gösterir.</p>
+                            <p><strong>4. Stresi Azaltır:</strong> Tuz odasının sakin ve huzurlu ortamı çocukların rahatlama ve dinlenme ihtiyacını karşılar.</p>
+                            <p><strong>5. Uyku Kalitesini Artırır:</strong> Düzenli haloterapi seansları sonrası çocuklarda uyku kalitesinde artış gözlemlenmektedir.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/images/gallery/photo20.webp" alt="Çocuklarda sosyal gelişim anaokulu" loading="lazy" width="400" height="250">
+                        <span class="blog-category">Çocuk Gelişimi</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 20 Şubat 2026</span>
+                            <span><i class="fas fa-clock"></i> 5 dk okuma</span>
+                        </div>
+                        <h3>Okul Öncesi Dönemde Sosyal-Duygusal Gelişim: Ailelere Öneriler</h3>
+                        <p>2-6 yaş arası çocukların sosyal beceri gelişimi, empati yeteneği ve duygusal zekanın desteklenmesi için evde ve okulda yapılabilecekler.</p>
+                        <button class="blog-read-more" onclick="this.closest('.blog-card').querySelector('.blog-full-content').classList.toggle('show'); this.textContent = this.textContent === 'Devamını Oku →' ? 'Kapat ↑' : 'Devamını Oku →';">Devamını Oku →</button>
+                        <div class="blog-full-content">
+                            <p><strong>Empati Geliştirme:</strong> Çocuğunuzla duyguları hakkında konuşun. "Arkadaşın üzüldüğünde sen ne hissediyorsun?" gibi sorular empati gelişimini destekler.</p>
+                            <p><strong>Paylaşma Becerisi:</strong> Paylaşmayı zorunluluk değil, keyif olarak deneyimlemesini sağlayın. Sıra bekleme oyunları ve grup aktiviteleri bu beceriyi güçlendirir.</p>
+                            <p><strong>Duygu İfadesi:</strong> Çocuğunuzun tüm duygularını — mutluluk, üzüntü, öfke — güvenli bir ortamda ifade edebilmesine izin verin. Duyguları bastırmak yerine yönetmeyi öğretin.</p>
+                            <p><strong>Arkadaşlık Becerileri:</strong> Akran gruplarıyla düzenli etkileşim, çocukların iş birliği, müzakere ve çatışma çözme becerilerini geliştirmesini sağlar.</p>
+                            <p>Anaokulu ortamı, tüm bu becerilerin doğal yollarla geliştiği en etkili alandır. Aydınlık Yarınlar'da sosyal-duygusal gelişim, eğitim programımızın temel yapı taşlarındandır.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="assets/images/gallery/photo25.webp" alt="Okula başlama hazırlığı ilkokul" loading="lazy" width="400" height="250">
+                        <span class="blog-category">Okula Hazırlık</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 12 Şubat 2026</span>
+                            <span><i class="fas fa-clock"></i> 6 dk okuma</span>
+                        </div>
+                        <h3>İlkokula Hazırlık: Çocuğunuzun Okul Olgunluğu İçin 10 İpucu</h3>
+                        <p>5-6 yaş grubundaki çocukların ilkokula geçiş sürecini kolaylaştırmak için aileler ve eğitimcilerin dikkat etmesi gereken konular.</p>
+                        <button class="blog-read-more" onclick="this.closest('.blog-card').querySelector('.blog-full-content').classList.toggle('show'); this.textContent = this.textContent === 'Devamını Oku →' ? 'Kapat ↑' : 'Devamını Oku →';">Devamını Oku →</button>
+                        <div class="blog-full-content">
+                            <p><strong>1. Rutin Oluşturun:</strong> Düzenli uyku ve uyanma saatleri, okul rutinine uyum sağlamayı kolaylaştırır.</p>
+                            <p><strong>2. Öz Bakım Becerileri:</strong> Kendi başına giyinme, el yıkama, tuvalet ihtiyacını karşılama gibi becerileri destekleyin.</p>
+                            <p><strong>3. Kalem Tutuşu:</strong> Doğru kalem tutuşu için boyama, kesme ve hamur oyunları ile ince motor becerileri güçlendirin.</p>
+                            <p><strong>4. Dinleme Becerisi:</strong> Hikaye dinleme, yönerge takip etme ve dikkat süresini artıran aktiviteler yapın.</p>
+                            <p><strong>5. Sosyal Hazırlık:</strong> Grup içinde çalışma, sıra bekleme ve paylaşma becerilerini pekiştirin.</p>
+                            <p><strong>6-10:</strong> Sayı ve harf farkındalığı, mekan-yön kavramları, zaman algısı, sorumluluk bilinci ve olumlu okul algısı oluşturma konularında çocuğunuzu destekleyin.</p>
+                            <p>Aydınlık Yarınlar'ın 60-72 ay programı, tüm bu becerileri oyun temelli yaklaşımla geliştirerek çocukları ilkokula hazırlar.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="faq-section section" id="sss">
         <div class="section-header">
@@ -1345,6 +1460,7 @@
                         <li><a href="#hakkimizda">Hakkımızda</a></li>
                         <li><a href="#egitim">Eğitim Programları</a></li>
                         <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#randevu">Randevu Al</a></li>
                     </ul>
                 </div>
