@@ -8,56 +8,56 @@
     
     <!-- Ana Sayfa -->
     <url>
-        <loc>https://aydinlikyarinlar.com/</loc>
+        <loc>https://aydinlikyarinlaranaokulu.com/</loc>
         <lastmod>2026-03-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         
         <!-- Önemli Görseller -->
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/og-image.webp</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/og-image.webp</image:loc>
             <image:title>Aydınlık Yarınlar Anaokulu Şanlıurfa Karaköprü</image:title>
             <image:caption>Şanlıurfa Karaköprü'de İngilizce ağırlıklı eğitim veren Aydınlık Yarınlar Anaokulu</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/logo.png</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/logo.png</image:loc>
             <image:title>Aydınlık Yarınlar Anaokulu Logo</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/classroom.webp</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/classroom.webp</image:loc>
             <image:title>Aydınlık Yarınlar Anaokulu Sınıfları</image:title>
             <image:caption>Modern ve aydınlık sınıf ortamımız</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/playground.webp</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/playground.webp</image:loc>
             <image:title>Anaokulu Oyun Alanı</image:title>
             <image:caption>Güvenli ve eğlenceli açık hava oyun alanımız</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/cafeteria.webp</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/cafeteria.webp</image:loc>
             <image:title>Anaokulu Yemekhanesi</image:title>
             <image:caption>Hijyenik ve ferah yemekhane alanımız</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/activity.webp</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/activity.webp</image:loc>
             <image:title>Anaokulu Aktivite Salonu</image:title>
             <image:caption>Sanat ve spor etkinlikleri için aktivite salonumuz</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/gallery/photo1.webp</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/gallery/photo1.webp</image:loc>
             <image:title>Şanlıurfa Anaokulu Müzik Aktivitesi</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://aydinlikyarinlar.com/assets/images/gallery/photo5.webp</image:loc>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/gallery/photo5.webp</image:loc>
             <image:title>Karaköprü Anaokulu Etkinlik</image:title>
         </image:image>
 
         <!-- Videolar -->
         <video:video>
-            <video:thumbnail_loc>https://aydinlikyarinlar.com/assets/images/gallery/photo5.webp</video:thumbnail_loc>
+            <video:thumbnail_loc>https://aydinlikyarinlaranaokulu.com/assets/images/gallery/photo5.webp</video:thumbnail_loc>
             <video:title>Aydınlık Yarınlar Anaokulu Tanıtım Videosu</video:title>
             <video:description>Şanlıurfa Karaköprü'de Aydınlık Yarınlar Anaokulu tanıtım videosu. Okulumuz, eğitim anlayışımız ve çocuklarımızla geçirdiğimiz mutlu anlar.</video:description>
-            <video:content_loc>https://aydinlikyarinlar.com/assets/videos/tanitim.mp4</video:content_loc>
+            <video:content_loc>https://aydinlikyarinlaranaokulu.com/assets/videos/tanitim.mp4</video:content_loc>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
     </url>

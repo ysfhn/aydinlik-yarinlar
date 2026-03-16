@@ -1,5 +1,5 @@
 # Aydınlık Yarınlar Anaokulu - robots.txt
-# aydinlikyarinlar.com
+# aydinlikyarinlaranaokulu.com
 
 # Allow all crawlers
 User-agent: *
@@ -10,7 +10,7 @@ Disallow: /assets/js/
 Disallow: /assets/css/
 
 # Sitemap location
-Sitemap: https://aydinlikyarinlar.com/sitemap.xml
+Sitemap: https://aydinlikyarinlaranaokulu.com/sitemap.xml
 
 # Googlebot specific
 User-agent: Googlebot
