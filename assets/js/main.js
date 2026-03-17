@@ -154,7 +154,25 @@ const allGalleryImages = [
     { src: 'assets/images/gallery/photo32.webp', category: 'events', alt: 'Şanlıurfa anaokulu anneler günü etkinliği' },
     { src: 'assets/images/gallery/photo33.webp', category: 'daily', alt: 'Çocuklar sınıfta puzzle ve zeka oyunları oynuyor' },
     { src: 'assets/images/gallery/photo34.webp', category: 'activities', alt: 'Karaköprü anaokulu dans ve hareket etkinliği' },
-    { src: 'assets/images/gallery/photo35.webp', category: 'events', alt: 'Aydınlık Yarınlar yılbaşı programı ve gösteri' }
+    { src: 'assets/images/gallery/photo35.webp', category: 'events', alt: 'Aydınlık Yarınlar yılbaşı programı ve gösteri' },
+    { src: 'assets/images/gallery/photo36.webp', category: 'daily', alt: 'Anaokulu öğrencileri sınıf içi grup etkinliği' },
+    { src: 'assets/images/gallery/photo37.webp', category: 'activities', alt: 'Şanlıurfa anaokulu yaratıcı drama çalışması' },
+    { src: 'assets/images/gallery/photo38.webp', category: 'events', alt: 'Karaköprü anaokulu veli bilgilendirme etkinliği' },
+    { src: 'assets/images/gallery/photo39.webp', category: 'daily', alt: 'Aydınlık Yarınlar anaokulu bahçe oyun etkinliği' },
+    { src: 'assets/images/gallery/photo40.webp', category: 'activities', alt: 'Çocuklar sınıfta deney ve keşif çalışması yapıyor' },
+    { src: 'assets/images/gallery/photo41.webp', category: 'events', alt: 'Şanlıurfa anaokulu müzikli dans gösterisi' },
+    { src: 'assets/images/gallery/photo42.webp', category: 'daily', alt: 'Karaköprü anaokulu sabah çemberi etkinliği' },
+    { src: 'assets/images/gallery/photo43.webp', category: 'activities', alt: 'Anaokulu öğrencileri İngilizce oyun aktivitesi' },
+    { src: 'assets/images/gallery/photo44.webp', category: 'events', alt: 'Aydınlık Yarınlar öğretmenler günü kutlaması' },
+    { src: 'assets/images/gallery/photo45.webp', category: 'daily', alt: 'Çocuklar açık havada doğa gözlemi yapıyor' },
+    { src: 'assets/images/gallery/photo46.webp', category: 'activities', alt: 'Şanlıurfa anaokulu matematik ve sayı oyunları' },
+    { src: 'assets/images/gallery/photo47.webp', category: 'events', alt: 'Karaköprü anaokulu spor günü etkinliği' },
+    { src: 'assets/images/gallery/photo48.webp', category: 'daily', alt: 'Anaokulu sınıfında kitap okuma ve hikaye saati' },
+    { src: 'assets/images/gallery/photo49.webp', category: 'activities', alt: 'Aydınlık Yarınlar el işi ve kolaj çalışması' },
+    { src: 'assets/images/gallery/photo50.webp', category: 'events', alt: 'Şanlıurfa anaokulu sezon sonu piknik etkinliği' },
+    { src: 'assets/images/gallery/photo51.webp', category: 'daily', alt: 'Çocuklar sınıfta müzik aleti tanıma etkinliği' },
+    { src: 'assets/images/gallery/photo52.webp', category: 'activities', alt: 'Karaköprü anaokulu su oyunları ve deney' },
+    { src: 'assets/images/gallery/photo53.webp', category: 'events', alt: 'Aydınlık Yarınlar anaokulu bayrak töreni' }
 ];
 
 let currentDisplayedCount = 6;
@@ -456,6 +474,60 @@ if (faqItems.length > 0) {
         }
     });
 }
+
+// Workshop Tabs
+const workshopTabs = document.querySelectorAll('.workshop-tab');
+const workshopTabContents = document.querySelectorAll('.workshop-tab-content');
+
+workshopTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Update tabs
+        workshopTabs.forEach(t => {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        // Update content
+        const targetId = 'workshop-' + tab.dataset.tab;
+        workshopTabContents.forEach(content => {
+            content.classList.remove('active');
+        });
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+            targetContent.classList.add('active');
+        }
+
+        // Pause all videos when switching tabs
+        document.querySelectorAll('.workshop-video-wrapper video').forEach(v => {
+            v.pause();
+        });
+    });
+});
+
+// Workshop Photo Lightbox (reuse gallery modal)
+const workshopPhotoItems = document.querySelectorAll('.workshop-photo-item');
+const workshopPhotos = [];
+workshopPhotoItems.forEach(item => {
+    const img = item.querySelector('img');
+    if (img) {
+        workshopPhotos.push({ src: img.src, alt: img.alt });
+    }
+});
+
+workshopPhotoItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        // Use gallery modal for workshop photos
+        galleryImages = workshopPhotos;
+        currentImageIndex = index;
+        modalImg.src = workshopPhotos[index].src;
+        modalImg.alt = workshopPhotos[index].alt || 'Workshop görseli';
+        galleryModal.classList.add('active');
+        galleryModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    });
+});
 
 }); // End of DOMContentLoaded
 

@@ -9,7 +9,7 @@
     <!-- Ana Sayfa -->
     <url>
         <loc>https://aydinlikyarinlaranaokulu.com/</loc>
-        <lastmod>2026-03-16</lastmod>
+        <lastmod>2026-03-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         
@@ -60,6 +60,44 @@
             <video:content_loc>https://aydinlikyarinlaranaokulu.com/assets/videos/tanitim.mp4</video:content_loc>
             <video:family_friendly>yes</video:family_friendly>
         </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://aydinlikyarinlaranaokulu.com/assets/images/gallery/photo20.webp</video:thumbnail_loc>
+            <video:title>Aydınlık Yarınlar Workshop - Veli Çocuk Atölye Çalışması</video:title>
+            <video:description>Velilerimiz ve çocuklarımızla birlikte gerçekleştirdiğimiz atölye çalışması etkinliği.</video:description>
+            <video:content_loc>https://aydinlikyarinlaranaokulu.com/assets/videos/workshop1.mp4</video:content_loc>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://aydinlikyarinlaranaokulu.com/assets/images/workshop/workshop2-poster.webp</video:thumbnail_loc>
+            <video:title>Aydınlık Yarınlar Workshop - Sanat ve Yaratıcılık Atölyesi</video:title>
+            <video:description>Çocuklarımızın sanat ve yaratıcılık atölyesinde hayal güçlerini konuşturduğu workshop etkinliği.</video:description>
+            <video:content_loc>https://aydinlikyarinlaranaokulu.com/assets/videos/workshop2.mp4</video:content_loc>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://aydinlikyarinlaranaokulu.com/assets/images/workshop/workshop3-poster.webp</video:thumbnail_loc>
+            <video:title>Aydınlık Yarınlar Workshop - Müzik ve Hareket Atölyesi</video:title>
+            <video:description>Müzik eşliğinde hareket ederek eğlenceli vakit geçirdiğimiz atölye çalışmamız.</video:description>
+            <video:content_loc>https://aydinlikyarinlaranaokulu.com/assets/videos/workshop3.mp4</video:content_loc>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+
+        <!-- Workshop Görselleri -->
+        <image:image>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/workshop/workshop-photo1.webp</image:loc>
+            <image:title>Aydınlık Yarınlar Workshop - Veli Çocuk Sanat Çalışması</image:title>
+            <image:caption>Veliler ve çocuklar birlikte sanat çalışması yapıyor</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/workshop/workshop-photo5.webp</image:loc>
+            <image:title>Karaköprü Anaokulu Workshop - Boyama ve Resim</image:title>
+            <image:caption>Boyama ve resim çalışması yapan anaokulu öğrencileri</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://aydinlikyarinlaranaokulu.com/assets/images/workshop/workshop-photo9.webp</image:loc>
+            <image:title>Şanlıurfa Anaokulu Workshop - Takım Çalışması</image:title>
+            <image:caption>Takım çalışması etkinliğinde çocuklar</image:caption>
+        </image:image>
     </url>
 
 </urlset>

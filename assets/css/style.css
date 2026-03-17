@@ -2554,6 +2554,67 @@ ul {
     padding: 80px 0;
 }
 
+/* Workshop Tabs */
+.workshop-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.workshop-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: var(--bg-white);
+    border: 2px solid #e8e8e8;
+    border-radius: var(--border-radius-xl);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    font-family: var(--font-secondary);
+}
+
+.workshop-tab:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.workshop-tab.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+}
+
+.workshop-tab.active:hover {
+    transform: translateY(-2px);
+}
+
+.workshop-tab i {
+    font-size: 1rem;
+}
+
+/* Tab Content */
+.workshop-tab-content {
+    display: none;
+}
+
+.workshop-tab-content.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .workshop-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -2624,9 +2685,70 @@ ul {
     line-height: 1.6;
 }
 
+/* Workshop Photo Grid */
+.workshop-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.workshop-photo-item {
+    position: relative;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 3 / 4;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.workshop-photo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.workshop-photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.workshop-photo-item:hover img {
+    transform: scale(1.05);
+}
+
+.workshop-photo-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 107, 157, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-normal);
+}
+
+.workshop-photo-overlay i {
+    color: #fff;
+    font-size: 1.8rem;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: var(--transition-normal);
+}
+
+.workshop-photo-item:hover .workshop-photo-overlay {
+    background: rgba(255, 107, 157, 0.35);
+}
+
+.workshop-photo-item:hover .workshop-photo-overlay i {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .workshop-empty-note {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .workshop-empty-note p {
@@ -2650,10 +2772,24 @@ ul {
     .workshop-section {
         padding: 60px 0;
     }
+
+    .workshop-tabs {
+        gap: 10px;
+    }
+
+    .workshop-tab {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
     
     .workshop-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .workshop-photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
     
     .workshop-video-wrapper video {

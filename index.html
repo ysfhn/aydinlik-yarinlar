@@ -1001,29 +1001,134 @@
         </div>
 
         <div class="container">
-            <div class="workshop-grid" id="workshop-grid">
+            <!-- Workshop Tabs -->
+            <div class="workshop-tabs" role="tablist" aria-label="Workshop içerik türleri">
+                <button class="workshop-tab active" role="tab" aria-selected="true" aria-controls="workshop-videos" id="tab-videos" data-tab="videos">
+                    <i class="fas fa-video"></i> Videolar
+                </button>
+                <button class="workshop-tab" role="tab" aria-selected="false" aria-controls="workshop-photos" id="tab-photos" data-tab="photos">
+                    <i class="fas fa-camera"></i> Görseller
+                </button>
+            </div>
 
-                <div class="workshop-card">
-                    <div class="workshop-video-wrapper">
-                        <video controls playsinline webkit-playsinline preload="metadata" poster="assets/images/gallery/photo20.webp" title="Aydınlık Yarınlar Workshop Etkinliği - Veli ve Çocuk Atölyesi">
-                            <source src="assets/videos/workshop1.mp4" type="video/mp4">
-                            Tarayıcınız videoyu desteklemiyor.
-                        </video>
-                    </div>
-                    <div class="workshop-info">
-                        <div class="workshop-date">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>Mart 2026</span>
+            <!-- Videos Tab -->
+            <div class="workshop-tab-content active" id="workshop-videos" role="tabpanel" aria-labelledby="tab-videos">
+                <div class="workshop-grid" id="workshop-grid">
+
+                    <div class="workshop-card">
+                        <div class="workshop-video-wrapper">
+                            <video controls playsinline webkit-playsinline preload="metadata" poster="assets/images/gallery/photo20.webp" title="Aydınlık Yarınlar Workshop Etkinliği - Veli ve Çocuk Atölyesi">
+                                <source src="assets/videos/workshop1.mp4" type="video/mp4">
+                                Tarayıcınız videoyu desteklemiyor.
+                            </video>
                         </div>
-                        <h3 class="workshop-title">Workshop Etkinliği</h3>
-                        <p class="workshop-desc">Velilerimiz ve çocuklarımızla birlikte keyifli bir atölye çalışması gerçekleştirdik.</p>
+                        <div class="workshop-info">
+                            <div class="workshop-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Mart 2026</span>
+                            </div>
+                            <h3 class="workshop-title">Veli-Çocuk Atölye Çalışması</h3>
+                            <p class="workshop-desc">Velilerimiz ve çocuklarımızla birlikte keyifli bir atölye çalışması gerçekleştirdik.</p>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-video-wrapper">
+                            <video controls playsinline webkit-playsinline preload="metadata" poster="assets/images/workshop/workshop2-poster.webp" title="Aydınlık Yarınlar Workshop Sanat Etkinliği - Çocuklar ve Veliler">
+                                <source src="assets/videos/workshop2.mp4" type="video/mp4">
+                                Tarayıcınız videoyu desteklemiyor.
+                            </video>
+                        </div>
+                        <div class="workshop-info">
+                            <div class="workshop-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Mart 2026</span>
+                            </div>
+                            <h3 class="workshop-title">Sanat ve Yaratıcılık Atölyesi</h3>
+                            <p class="workshop-desc">Çocuklarımız sanat ve yaratıcılık atölyesinde hayal güçlerini konuşturdu.</p>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-video-wrapper">
+                            <video controls playsinline webkit-playsinline preload="metadata" poster="assets/images/workshop/workshop3-poster.webp" title="Aydınlık Yarınlar Workshop Müzik ve Hareket Etkinliği">
+                                <source src="assets/videos/workshop3.mp4" type="video/mp4">
+                                Tarayıcınız videoyu desteklemiyor.
+                            </video>
+                        </div>
+                        <div class="workshop-info">
+                            <div class="workshop-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Mart 2026</span>
+                            </div>
+                            <h3 class="workshop-title">Müzik ve Hareket Atölyesi</h3>
+                            <p class="workshop-desc">Müzik eşliğinde hareket ederek eğlenceli vakit geçirdiğimiz atölye çalışmamız.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Photos Tab -->
+            <div class="workshop-tab-content" id="workshop-photos" role="tabpanel" aria-labelledby="tab-photos">
+                <div class="workshop-photo-grid" id="workshop-photo-grid">
+                    <div class="workshop-photo-item" data-index="0">
+                        <img src="assets/images/workshop/workshop-photo1.webp" alt="Aydınlık Yarınlar anaokulu workshop etkinliği - veliler ve çocuklar birlikte sanat çalışması" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="1">
+                        <img src="assets/images/workshop/workshop-photo2.webp" alt="Karaköprü anaokulu veli katılımlı workshop - el becerisi etkinliği" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="2">
+                        <img src="assets/images/workshop/workshop-photo3.webp" alt="Şanlıurfa anaokulu workshop - çocuklar grup çalışması yapıyor" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="3">
+                        <img src="assets/images/workshop/workshop-photo4.webp" alt="Aydınlık Yarınlar atölye çalışması - yaratıcı sanat etkinliği" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="4">
+                        <img src="assets/images/workshop/workshop-photo5.webp" alt="Karaköprü anaokulu workshop - boyama ve resim çalışması" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="5">
+                        <img src="assets/images/workshop/workshop-photo6.webp" alt="Şanlıurfa anaokulu veli-çocuk etkinliği - birlikte öğrenme" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="6">
+                        <img src="assets/images/workshop/workshop-photo7.webp" alt="Aydınlık Yarınlar workshop - çocuklar el işi yapıyor" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="7">
+                        <img src="assets/images/workshop/workshop-photo8.webp" alt="Karaköprü anaokulu atölye - veli ve çocuk birlikte aktivite" width="600" height="1067" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="8">
+                        <img src="assets/images/workshop/workshop-photo9.webp" alt="Şanlıurfa anaokulu workshop - takım çalışması etkinliği" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="9">
+                        <img src="assets/images/workshop/workshop-photo10.webp" alt="Aydınlık Yarınlar anaokulu - veliler ve çocuklar müzik atölyesinde" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="10">
+                        <img src="assets/images/workshop/workshop-photo11.webp" alt="Karaköprü anaokulu workshop - doğa ve keşif etkinliği" width="600" height="1067" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="11">
+                        <img src="assets/images/workshop/workshop-photo12.webp" alt="Şanlıurfa anaokulu atölye çalışması - parmak boyası etkinliği" width="600" height="800" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="workshop-photo-item" data-index="12">
+                        <img src="assets/images/workshop/workshop-photo13.webp" alt="Aydınlık Yarınlar veli-çocuk workshop - hamur ve şekil atölyesi" width="600" height="1067" loading="lazy">
+                        <div class="workshop-photo-overlay"><i class="fas fa-search-plus"></i></div>
                     </div>
                 </div>
-
             </div>
 
             <div class="workshop-empty-note" id="workshop-more-note">
-                <p><i class="fas fa-film"></i> Yeni workshop videoları düzenli olarak eklenmektedir.</p>
+                <p><i class="fas fa-film"></i> Yeni workshop içerikleri düzenli olarak eklenmektedir.</p>
             </div>
         </div>
     </section>
